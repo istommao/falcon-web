@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <title>falcon-web</title>
+    <style>
+    body,
+    div {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: #4B9EED;
+        font-size: 14px;
+        font-family: Arial, sans-serif, 'Comic Sans MS', serif;
+        color: #89949B;
+    }
+
+    .login-pane {
+        margin: 200px auto;
+        padding: 10px;
+        background: #FFF;
+        width: 350px;
+        height: 200px;
+        border-radius: 3px;
+    }
+    .inline-item {
+        margin: 20px;
+        height: 40px;
+        text-align: center;
+    }
+    .inline-item .input {
+        width: 95%;
+        height: 40px;
+        border: 2px solid #eee;
+        border-radius: 3px;
+        text-indent: 10px;
+        font-size: 14px;
+    }
+    .inline-item .submit {
+        width: 95%;
+        height: 40px;
+        border-radius: 3px;
+        background: #FFF;
+        cursor: pointer;
+        border: 2px solid #eee;
+        font-size: 14px;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div class="login-pane">
+            <div class="inline-item"><input class="input" type="text" placeholder="请输入用户名" /></div>
+            <div class="inline-item"><input class="input" type="password" placeholder="请输入密码" /></div>
+            <div class="inline-item"><input class="submit" type="submit" value="登 录" /></div>
+        </div>
+    </div>
+</body>
+</html>
