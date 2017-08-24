@@ -24,19 +24,19 @@
         background: #FFF;
         width: 450px;
         height: auto;
-        border-radius: 5px;
-        box-shadow: 1px 4px 10px #888888;
+        border-radius: 4px;
+        box-shadow: 1px 2px 3px #888888;
     }
     .pane-header {
         width: 450px;
         height: 160px;
         line-height: 160px;
-        background: #3358A6;
+        background: #343536;
         text-align: center;
         font-weight: bold;
         font-size: 18px;
         color: white;
-        border-radius: 5px 5px 0 0;
+        border-radius: 4px 4px 0 0;
     }
     .inline-item {
         margin: 20px;
@@ -65,10 +65,13 @@
 <body>
     <div id="main">
         <div class="login-pane">
+        <form role="form" action="{{ form_url }}" method="post">
             <div class="pane-header">Falcon-web 登录</div>
-            <div class="inline-item"><input class="input" type="text" placeholder="请输入用户名" /></div>
-            <div class="inline-item"><input class="input" type="password" placeholder="请输入密码" /></div>
+            {% csrf_token %}
+            <div class="inline-item"><input class="input" name="username" type="text" placeholder="请输入用户名" /></div>
+            <div class="inline-item"><input class="input" name="password" type="password" placeholder="请输入密码" /></div>
             <div class="inline-item"><input class="submit" type="submit" value="登 录" /></div>
+            </form>
         </div>
     </div>
 </body>

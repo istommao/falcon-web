@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
 CUSTOME_INSTALLED_APPS = [
     'extensions',
-    'account'
+    'falcon'
 ]
 
 INSTALLED_APPS.extend(CUSTOME_INSTALLED_APPS)
@@ -129,3 +129,7 @@ TIME_FORMAT = 'H:i:s'
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# config
+API_ADDR = os.environ.get('API_ADDR', 'http://127.0.0.1:8080/api/v1')
