@@ -12,7 +12,7 @@
     }
 
     body {
-        background: url('bg.gif');
+        background: #ECEFF6;
         font-size: 14px;
         font-family: Arial, sans-serif, 'Comic Sans MS', serif;
         color: #89949B;
@@ -20,11 +20,23 @@
 
     .login-pane {
         margin: 15% auto;
-        padding: 10px;
+        padding-bottom: 10px;
         background: #FFF;
-        width: 350px;
-        height: 200px;
-        border-radius: 3px;
+        width: 450px;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 1px 4px 10px #888888;
+    }
+    .pane-header {
+        width: 450px;
+        height: 160px;
+        line-height: 160px;
+        background: #3358A6;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px 5px 0 0;
     }
     .inline-item {
         margin: 20px;
@@ -32,7 +44,7 @@
         text-align: center;
     }
     .inline-item .input {
-        width: 95%;
+        width: 80%;
         height: 40px;
         border: 2px solid #eee;
         border-radius: 3px;
@@ -40,7 +52,7 @@
         font-size: 14px;
     }
     .inline-item .submit {
-        width: 95%;
+        width: 80%;
         height: 40px;
         border-radius: 3px;
         background: #FFF;
@@ -53,6 +65,7 @@
 <body>
     <div id="main">
         <div class="login-pane">
+            <div class="pane-header">Falcon-web 登录</div>
             <div class="inline-item"><input class="input" type="text" placeholder="请输入用户名" /></div>
             <div class="inline-item"><input class="input" type="password" placeholder="请输入密码" /></div>
             <div class="inline-item"><input class="submit" type="submit" value="登 录" /></div>
